@@ -104,7 +104,7 @@ export default function ShopSection({ onAddToCart }) {
                 <p className="font-montserrat text-xs text-gray-500 tracking-widest uppercase mb-6">
                   {filtered.length} product{filtered.length !== 1 ? 's' : ''} found
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 sm:gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6">
                   <AnimatePresence mode="popLayout">
                     {filtered.map((product) => (
                       <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
