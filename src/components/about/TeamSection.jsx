@@ -179,7 +179,7 @@ export default function TeamSection() {
   const row2 = members.slice(3)
 
   return (
-    <section className="bg-[#0A1A2F] overflow-visible" style={{ padding: '128px 0' }}>
+    <section className="bg-[#0A1A2F] overflow-visible py-16 sm:py-24 lg:py-32">
       <style>{`
         .team-card:hover {
           transform: translateY(-8px);
@@ -195,7 +195,7 @@ export default function TeamSection() {
         }
       `}</style>
 
-      <div className="max-w-[1200px] mx-auto px-[60px]">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -206,13 +206,13 @@ export default function TeamSection() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             The People
           </p>
-          <h2 className="font-bebas text-6xl md:text-7xl text-white tracking-wider">
+          <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
             Meet the <span className="text-sky-400">Crew</span>
           </h2>
         </motion.div>
 
-        {/* 2-column layout: CEO left (narrower) | Members right (wider) */}
-        <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr]" style={{ gap: '48px', alignItems: 'stretch' }}>
+        {/* 2-column layout: stacks on mobile, side-by-side on lg+ */}
+        <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] xl:grid-cols-[320px_1fr]" style={{ gap: '32px', alignItems: 'stretch' }}>
 
           {/* Left col — CEO, fixed width, vertically centered */}
           <div className="flex flex-col items-center justify-center h-full">
@@ -224,13 +224,13 @@ export default function TeamSection() {
           <div>
             <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-6">The Team</p>
             {/* Row 1 */}
-            <div className="grid grid-cols-3" style={{ gap: '24px', marginBottom: '24px' }}>
+            <div className="grid grid-cols-2 sm:grid-cols-3" style={{ gap: '16px', marginBottom: '16px' }}>
               {row1.map((member, i) => (
                 <TeamCard key={member.name} member={member} index={i + 1} />
               ))}
             </div>
             {/* Row 2 */}
-            <div className="grid grid-cols-3" style={{ gap: '24px' }}>
+            <div className="grid grid-cols-2 sm:grid-cols-3" style={{ gap: '16px' }}>
               {row2.map((member, i) => (
                 <TeamCard key={member.name} member={member} index={i + 4} />
               ))}
