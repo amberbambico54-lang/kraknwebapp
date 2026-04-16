@@ -1,12 +1,28 @@
-import { motion } from 'framer-motion'
-import { FaBolt, FaBrain, FaLeaf, FaSnowflake } from 'react-icons/fa'
+import { motion } from "framer-motion";
+import { FaBolt, FaBrain, FaFlask, FaSnowflake } from "react-icons/fa";
 
 const benefits = [
-  { Icon: FaBolt, title: 'Explosive Energy', desc: 'Instant surge that powers you through any challenge.' },
-  { Icon: FaBrain, title: 'Laser Focus', desc: 'Sharpen your mind and lock in on what matters.' },
-  { Icon: FaLeaf, title: 'Plant-Based Caffeine', desc: 'Clean energy sourced from nature, not a lab.' },
-  { Icon: FaSnowflake, title: 'Zero Crash Formula', desc: 'Sustained performance with no hard comedown.' },
-]
+  {
+    Icon: FaBolt,
+    title: "Explosive Energy",
+    desc: "Instant surge that powers you through any challenge.",
+  },
+  {
+    Icon: FaBrain,
+    title: "Laser Focus",
+    desc: "Sharpen your mind and lock in on what matters.",
+  },
+  {
+    Icon: FaFlask,
+    title: "Cola-Base Formula",
+    desc: "A Unique cola extract base for smooth energy and a refreshing taste that stands out.",
+  },
+  {
+    Icon: FaSnowflake,
+    title: "Zero Crash Formula",
+    desc: "Sustained performance with no hard comedown.",
+  },
+];
 
 export default function Benefits() {
   return (
@@ -39,19 +55,23 @@ export default function Benefits() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="group p-8 rounded-2xl bg-[#0d2240]/60 border border-sky-900/30 hover:border-sky-500/40 transition-all duration-300 text-center backdrop-blur-sm hover:-translate-y-1"
-              style={{ boxShadow: '0 4px 30px rgba(0,0,0,0.3)' }}
+              style={{ boxShadow: "0 4px 30px rgba(0,0,0,0.3)" }}
             >
               <div className="flex justify-center mb-5">
                 <div className="w-16 h-16 rounded-full bg-sky-500/10 flex items-center justify-center group-hover:bg-sky-500/20 transition-colors duration-300">
                   <b.Icon className="text-sky-400 text-3xl" />
                 </div>
               </div>
-              <h3 className="font-bebas text-2xl text-white tracking-wider mb-2">{b.title}</h3>
-              <p className="font-montserrat text-gray-400 text-sm leading-relaxed">{b.desc}</p>
+              <h3 className="font-bebas text-2xl text-white tracking-wider mb-2">
+                {b.title}
+              </h3>
+              <p className="font-montserrat text-gray-400 text-sm leading-relaxed">
+                {b.desc}
+              </p>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,32 +1,35 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const products = [
   {
-    name: 'Deep Sea Cola',
-    tagline: 'Cold. Bold. Unleashed.',
-    color: 'from-sky-900 to-[#0A1A2F]',
-    glowColor: 'rgba(56,189,248,0.25)',
-    badge: 'Best Seller',
+    name: "Kraken Max",
+    tagline: "Cold. Bold. Unleashed.",
+    color: "from-sky-900 to-[#0A1A2F]",
+    glowColor: "rgba(56,189,248,0.25)",
+    badge: "Best Seller",
   },
   {
-    name: 'Abyss Blue',
-    tagline: 'Dive deeper. Go harder.',
-    color: 'from-blue-900 to-[#0A1A2F]',
-    glowColor: 'rgba(96,165,250,0.25)',
-    badge: 'New',
+    name: "Kraken Pure",
+    tagline: "Dive deeper. Go harder.",
+    color: "from-blue-900 to-[#0A1A2F]",
+    glowColor: "rgba(96,165,250,0.25)",
+    badge: "New",
   },
   {
-    name: 'Kraken Original',
-    tagline: 'The one that started it all.',
-    color: 'from-indigo-900 to-[#0A1A2F]',
-    glowColor: 'rgba(129,140,248,0.25)',
-    badge: 'Classic',
+    name: "Kraken Classic",
+    tagline: "The one that started it all.",
+    color: "from-indigo-900 to-[#0A1A2F]",
+    glowColor: "rgba(129,140,248,0.25)",
+    badge: "Classic",
   },
-]
+];
 
 export default function Products() {
   return (
-    <section id="products" className="py-24 bg-[#060f1e] relative overflow-hidden">
+    <section
+      id="products"
+      className="py-24 bg-[#060f1e] relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-[#0A1A2F] to-[#060f1e]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -71,9 +74,17 @@ export default function Products() {
               <div className="h-64 flex items-center justify-center relative">
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: i * 0.5 }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: i * 0.5,
+                  }}
                   className="w-24 h-44 rounded-2xl bg-gradient-to-b from-sky-400/20 to-sky-900/40 border border-sky-400/30 flex items-center justify-center"
-                  style={{ boxShadow: `0 0 30px ${p.glowColor}`, willChange: 'transform' }}
+                  style={{
+                    boxShadow: `0 0 30px ${p.glowColor}`,
+                    willChange: "transform",
+                  }}
                 >
                   <span className="font-bebas text-sky-300 text-lg tracking-widest rotate-0 text-center px-2">
                     KR<span className="text-white">Ā</span>KN
@@ -85,8 +96,12 @@ export default function Products() {
 
               {/* Info */}
               <div className="p-6 pt-0">
-                <h3 className="font-bebas text-3xl text-white tracking-wider mb-1">{p.name}</h3>
-                <p className="font-montserrat text-gray-400 text-sm mb-6">{p.tagline}</p>
+                <h3 className="font-bebas text-3xl text-white tracking-wider mb-1">
+                  {p.name}
+                </h3>
+                <p className="font-montserrat text-gray-400 text-sm mb-6">
+                  {p.tagline}
+                </p>
                 <button className="w-full font-montserrat text-sm font-semibold tracking-widest uppercase py-3 border border-sky-500/40 hover:border-sky-400 hover:bg-sky-500/10 text-sky-300 rounded-full transition-all duration-300">
                   View Product
                 </button>
@@ -96,5 +111,5 @@ export default function Products() {
         </div>
       </div>
     </section>
-  )
+  );
 }
