@@ -24,7 +24,7 @@ export default function AboutHero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-bebas text-5xl sm:text-7xl md:text-9xl leading-none tracking-wider text-white mb-6"
+          className="font-bebas uppercase text-4xl sm:text-6xl md:text-8xl leading-none tracking-wider text-white mb-6"
           style={{ textShadow: '0 0 60px rgba(56,189,248,0.25)' }}
         >
           Born From the <span className="text-sky-400">Deep</span>

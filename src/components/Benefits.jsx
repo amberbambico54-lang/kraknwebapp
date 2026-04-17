@@ -41,7 +41,7 @@ export default function Benefits() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             Why KRĀKN
           </p>
-          <h2 className="font-bebas text-6xl md:text-7xl text-white tracking-wider">
+          <h2 className="font-bebas uppercase text-4xl sm:text-5xl md:text-6xl text-white tracking-wider">
             Built Different
           </h2>
         </motion.div>
@@ -62,7 +62,7 @@ export default function Benefits() {
                   <b.Icon className="text-sky-400 text-3xl" />
                 </div>
               </div>
-              <h3 className="font-bebas text-2xl text-white tracking-wider mb-2">
+              <h3 className="font-bebas uppercase text-xl text-white tracking-wider mb-2">
                 {b.title}
               </h3>
               <p className="font-montserrat text-gray-400 text-sm leading-relaxed">

@@ -27,7 +27,7 @@ export default function MissionVision() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             What Drives Us
           </p>
-          <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
+          <h2 className="font-bebas uppercase text-4xl sm:text-5xl md:text-6xl text-white tracking-wider">
             Purpose & <span className="text-sky-400">Direction</span>
           </h2>
         </motion.div>
@@ -45,7 +45,7 @@ export default function MissionVision() {
             >
               <div className="text-3xl mb-4">{c.icon}</div>
               <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">{c.label}</p>
-              <h3 className="font-bebas text-3xl sm:text-4xl text-white tracking-wider mb-4">{c.title}</h3>
+              <h3 className="font-bebas uppercase text-2xl sm:text-3xl text-white tracking-wider mb-4">{c.title}</h3>
               <p className="font-montserrat text-gray-400 text-sm leading-relaxed">{c.body}</p>
             </motion.div>
           ))}

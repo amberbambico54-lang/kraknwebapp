@@ -55,7 +55,7 @@ export default function ProductCard({ product, onAddToCart }) {
       {/* Info */}
       <div className="p-4 sm:p-5 flex flex-col flex-1">
         <p className={`font-montserrat text-xs tracking-widest uppercase mb-1 ${s.accent}`}>{product.type}</p>
-        <h3 className="font-bebas text-xl sm:text-2xl text-white tracking-wider mb-1">{product.name}</h3>
+        <h3 className="font-bebas uppercase text-xl sm:text-2xl text-white tracking-wider mb-1">{product.name}</h3>
 
         {/* Size options */}
         {product.sizes.length > 0 && (

@@ -1,5 +1,5 @@
 const categories = ['All', 'Drinks', 'Apparel', 'Accessories']
-const types = ['All Types', 'Energy Drink', 'Apparel', 'Hoodie', 'Socks', 'Cap', 'Bag', 'Flask', 'Gym Gear']
+const types = ['All Types', 'Pre-workout Cola', 'Apparel', 'Hoodie', 'Socks', 'Cap', 'Bag', 'Flask', 'Gym Gear']
 const priceRanges = [
   { label: 'All Prices', min: 0, max: Infinity },
   { label: 'Under ₱500', min: 0, max: 499 },

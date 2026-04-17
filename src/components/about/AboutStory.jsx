@@ -15,7 +15,7 @@ export default function AboutStory() {
             <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-4">
               The Origin
             </p>
-            <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wider leading-none mb-6">
+            <h2 className="font-bebas uppercase text-4xl sm:text-5xl md:text-6xl text-white tracking-wider leading-none mb-6">
               Not Built in a <br />
               <span className="text-sky-400">Boardroom</span>
             </h2>
@@ -45,7 +45,7 @@ export default function AboutStory() {
               style={{ boxShadow: '0 0 80px rgba(56,189,248,0.1)' }}
             >
               <div className="text-center px-8">
-                <div className="font-bebas text-5xl sm:text-8xl text-sky-400/20 tracking-widest mb-4">KRĀKN</div>
+                <div className="font-bebas uppercase text-4xl sm:text-6xl text-sky-400/20 tracking-widest mb-4">KRĀKN</div>
                 <p className="font-montserrat text-gray-600 text-xs tracking-widest uppercase">Brand image here</p>
               </div>
               <div className="absolute top-0 left-0 w-32 h-32 bg-sky-500/5 blur-2xl rounded-full" />

@@ -32,14 +32,14 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="font-montserrat text-sky-400 text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase mb-4 sm:mb-6"
         >
-          Premium Energy Drink
+          Premium Pre-Workout Cola
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-bebas text-6xl sm:text-8xl md:text-[9rem] lg:text-[10rem] leading-none tracking-wider text-white mb-4"
+          className="font-bebas uppercase text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-wider text-white mb-4"
           style={{ textShadow: '0 0 60px rgba(56,189,248,0.3)' }}
         >
           Feel the Pull

@@ -35,7 +35,7 @@ export default function SocialProof() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             Social Proof
           </p>
-          <h2 className="font-bebas text-6xl md:text-7xl text-white tracking-wider mb-4">
+          <h2 className="font-bebas uppercase text-4xl sm:text-5xl md:text-6xl text-white tracking-wider mb-4">
             Trusted by <span className="text-sky-400">Athletes</span>
           </h2>
           <p className="font-montserrat text-gray-400 text-sm tracking-widest uppercase">
@@ -54,7 +54,7 @@ export default function SocialProof() {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="text-center"
             >
-              <div className="font-bebas text-5xl text-sky-400 tracking-wider" style={{ textShadow: '0 0 20px rgba(56,189,248,0.4)' }}>
+              <div className="font-bebas uppercase text-4xl text-sky-400 tracking-wider" style={{ textShadow: '0 0 20px rgba(56,189,248,0.4)' }}>
                 {val}
               </div>
               <div className="font-montserrat text-xs text-gray-400 tracking-widest uppercase mt-1">{label}</div>

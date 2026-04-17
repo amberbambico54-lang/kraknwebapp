@@ -16,10 +16,10 @@ import wristWraps        from '../../assets/productsItems/Krakn Wrist Wraps.jpg'
 
 export const products = [
   // Drinks
-  { id: 1, name: 'KRĀKN Classic',                  category: 'drink',     price: 120,  type: 'Energy Drink', variant: 'blue',    badge: 'Best Seller', sizes: [],                     colors: [],                              image: null },
-  { id: 2, name: 'KRĀKN Green Surge',              category: 'drink',     price: 120,  type: 'Energy Drink', variant: 'green',   badge: 'New',         sizes: [],                     colors: [],                              image: null },
-  { id: 3, name: 'KRĀKN Red Rush',                 category: 'drink',     price: 120,  type: 'Energy Drink', variant: 'red',     badge: 'Hot',         sizes: [],                     colors: [],                              image: null },
-  { id: 4, name: 'KRĀKN 6-Pack',                   category: 'drink',     price: 650,  type: 'Energy Drink', variant: 'blue',    badge: 'Bundle',      sizes: [],                     colors: [],                              image: null },
+  { id: 1, name: 'KRĀKN Classic',                  category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'blue',    badge: 'Best Seller', sizes: [],                     colors: [],                              image: null },
+  { id: 2, name: 'KRĀKN PURE',              category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'green',   badge: 'New',         sizes: [],                     colors: [],                              image: null },
+  { id: 3, name: 'KRĀKN MAX',                 category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'red',     badge: 'Hot',         sizes: [],                     colors: [],                              image: null },
+  { id: 4, name: 'KRĀKN 6-Pack',                   category: 'drink',     price: 650,  type: 'Pre-workout Cola', variant: 'blue',    badge: 'Bundle',      sizes: [],                     colors: [],                              image: null },
 
   // Apparel
   { id: 5,  name: 'Krakn Elite Apparel',           category: 'apparel',   price: 850,  type: 'Apparel',      variant: 'neutral', badge: '',            sizes: ['S','M','L','XL'],     colors: ['#0A1A2F','#ffffff','#38bdf8'], image: eliteApparel },

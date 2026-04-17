@@ -19,7 +19,7 @@ export default function CTA() {
             Ready?
           </p>
           <h2
-            className="font-bebas text-5xl sm:text-7xl md:text-9xl text-white tracking-wider leading-none mb-6 sm:mb-8"
+            className="font-bebas uppercase text-5xl sm:text-6xl md:text-8xl text-white tracking-wider leading-none mb-6 sm:mb-8"
             style={{ textShadow: '0 0 60px rgba(56,189,248,0.25)' }}
           >
             Ready to Feel <br />

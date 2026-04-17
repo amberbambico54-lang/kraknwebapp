@@ -23,7 +23,7 @@ export default function Features() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             The Difference
           </p>
-          <h2 className="font-bebas text-6xl md:text-7xl text-white tracking-wider">
+          <h2 className="font-bebas uppercase text-4xl sm:text-5xl md:text-6xl text-white tracking-wider">
             What Makes KRĀKN <span className="text-sky-400">Different?</span>
           </h2>
         </motion.div>
@@ -39,7 +39,7 @@ export default function Features() {
               className="p-8 rounded-2xl bg-[#0d2240]/40 border border-sky-900/30 hover:border-sky-500/30 transition-all duration-300 text-center group hover:-translate-y-1"
             >
               <div
-                className="font-bebas text-5xl text-sky-400 mb-2 group-hover:text-sky-300 transition-colors"
+                className="font-bebas uppercase text-4xl text-sky-400 mb-2 group-hover:text-sky-300 transition-colors"
                 style={{ textShadow: '0 0 20px rgba(56,189,248,0.4)' }}
               >
                 {f.value}

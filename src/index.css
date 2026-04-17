@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Bronzier';
+  src: url('./assets/fonts/Bronzier-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 @import "tailwindcss";
 
 @theme {
-  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-bebas: 'Bronzier', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
   --color-ocean: #0A1A2F;
   --color-ocean-deep: #060f1e;
@@ -11,7 +19,7 @@
 }
 
 @utility font-bebas {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bronzier', sans-serif;
 }
 
 @utility font-montserrat {
@@ -32,7 +40,6 @@
   }
 }
 
-/* Base overrides — on top of Tailwind Preflight, not replacing it */
 html {
   scroll-behavior: smooth;
 }

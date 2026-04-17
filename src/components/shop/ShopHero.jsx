@@ -24,7 +24,7 @@ export default function ShopHero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-bebas text-5xl sm:text-7xl md:text-8xl leading-none tracking-wider text-white mb-4"
+          className="font-bebas uppercase text-4xl sm:text-6xl md:text-7xl leading-none tracking-wider text-white mb-4"
           style={{ textShadow: '0 0 60px rgba(56,189,248,0.25)' }}
         >
           Gear Up From <span className="text-sky-400">the Depths</span>
