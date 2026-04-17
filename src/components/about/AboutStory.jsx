@@ -28,7 +28,7 @@ export default function AboutStory() {
             built a formula that respects your body and your performance — no shortcuts, no fillers.
           </p>
           <p className="font-montserrat text-gray-400 text-sm sm:text-base leading-relaxed text-justify">
-            KRĀKN isn't just a drink. It's a statement that you refuse to settle for average.
+            KRAKN isn't just a drink. It's a statement that you refuse to settle for average.
           </p>
         </motion.div>
       </div>
