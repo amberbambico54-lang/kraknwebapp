@@ -24,7 +24,7 @@ export default function PosterSection() {
           className="text-center mb-16"
         >
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
-            The Art
+            Our Products
           </p>
           <h2 className="font-bebas uppercase text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
             From the <span className="text-sky-400">Depths</span>
