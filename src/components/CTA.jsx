@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export default function CTA() {
   return (
@@ -28,15 +29,15 @@ export default function CTA() {
           <p className="font-montserrat text-gray-400 text-sm sm:text-base mb-8 sm:mb-12 max-w-md mx-auto">
             Join thousands of athletes who chose KRĀKN. Your next level starts here.
           </p>
-          <motion.a
-            href="/shop"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            className="inline-block font-montserrat font-semibold text-sm tracking-widest uppercase px-10 sm:px-14 py-4 sm:py-5 bg-sky-500 hover:bg-sky-400 text-white rounded-full transition-colors duration-300"
-            style={{ boxShadow: '0 0 40px rgba(56,189,248,0.5)' }}
-          >
-            Shop Now
-          </motion.a>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} className="inline-block">
+            <Link
+              to="/shop"
+              className="inline-block font-montserrat font-semibold text-sm tracking-widest uppercase px-10 sm:px-14 py-4 sm:py-5 bg-sky-500 hover:bg-sky-400 text-white rounded-full transition-colors duration-300"
+              style={{ boxShadow: '0 0 40px rgba(56,189,248,0.5)' }}
+            >
+              Shop Now
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </section>

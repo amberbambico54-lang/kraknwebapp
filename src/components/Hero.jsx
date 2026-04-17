@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import FloatingBubbles from './FloatingBubbles'
 
 export default function Hero() {
@@ -69,12 +70,12 @@ export default function Hero() {
           >
             Dive In Now
           </a>
-          <a
-            href="/products"
+          <Link
+            to="/products"
             className="w-full sm:w-auto font-montserrat font-semibold text-sm tracking-widest uppercase px-8 sm:px-10 py-4 border border-sky-500/50 hover:border-sky-400 text-sky-300 hover:text-sky-200 rounded-full transition-all duration-300 hover:scale-105 backdrop-blur-sm text-center"
           >
             Explore Flavors
-          </a>
+          </Link>
         </motion.div>
       </div>
 

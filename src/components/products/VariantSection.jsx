@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const colorMap = {
   blue: {
@@ -109,13 +110,13 @@ export default function VariantSection({ id, title, tagline, description, benefi
           </li>
         ))}
       </ul>
-     <a
-        href="/shop"
+     <Link
+        to="/shop"
         className={`inline-block font-montserrat font-semibold text-sm tracking-widest uppercase px-8 py-3.5 border ${c.border} ${c.accent} hover:bg-white/5 rounded-full transition-all duration-300 hover:scale-105`}
         style={{ boxShadow: `0 0 20px ${c.glow}` }}
       >
         Shop Now
-      </a>
+      </Link>
     </motion.div>
   )
 
