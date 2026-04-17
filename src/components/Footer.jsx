@@ -12,7 +12,7 @@ const navLinks = [
 const productLinks = [
   { label: 'Flavors',     to: '/products#overview'    },
   { label: 'Ingredients', to: '/products#ingredients' },
-  { label: 'FAQs',        to: '#'                     },
+  
 ]
 
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
         </Link>
             </div>
             <p className="font-montserrat text-gray-500 text-xs tracking-widest uppercase">
-              Power Born Beneath
+              Unleash The Strength from the Depths.
             </p>
           </div>
 
@@ -115,7 +115,7 @@ export default function Footer() {
             © {new Date().getFullYear()} KRĀKN. All rights reserved.
           </p>
           <p className="font-montserrat text-xs text-gray-600 tracking-widest uppercase">
-            Power Born Beneath
+            Unleash The Strength from the Depths.
           </p>
         </div>
       </div>
