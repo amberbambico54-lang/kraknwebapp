@@ -31,22 +31,24 @@ export default function ProductCard({ product, onAddToCart }) {
 
       {/* Image area */}
       <div className="h-[200px] sm:h-[220px] flex items-center justify-center relative overflow-hidden">
-        <motion.div
-          animate={{ y: [0, -6, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-          className={`w-16 h-32 sm:w-20 sm:h-40 rounded-2xl bg-gradient-to-b ${s.bg} to-[#060f1e] border ${s.border} flex items-center justify-center`}
-          style={{ boxShadow: `0 0 30px ${s.glow}`, willChange: 'transform' }}
-        >
-          {product.category === 'drink' ? (
+        {product.image ? (
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <motion.div
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+            className={`w-16 h-32 sm:w-20 sm:h-40 rounded-2xl bg-gradient-to-b ${s.bg} to-[#060f1e] border ${s.border} flex items-center justify-center`}
+            style={{ boxShadow: `0 0 30px ${s.glow}`, willChange: 'transform' }}
+          >
             <span className={`font-bebas text-sm tracking-widest text-center px-1 ${s.accent}`}>
               KR<span className="text-white">Ā</span>KN
             </span>
-          ) : product.category === 'apparel' ? (
-            <span className="text-2xl">👕</span>
-          ) : (
-            <span className="text-2xl">🏋️</span>
-          )}
-        </motion.div>
+          </motion.div>
+        )}
         <div className="absolute bottom-3 w-14 h-3 rounded-full blur-lg" style={{ background: s.glow }} />
       </div>
 
