@@ -27,7 +27,7 @@ export default function PosterSection() {
             The Line Up
           </p>
           <h2 className="font-bebas uppercase text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
-            Our<span className="text-sky-400">Products</span>
+            Our<span className="text-sky-400"> Products</span>
           </h2>
         </motion.div>
 
