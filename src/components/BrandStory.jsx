@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export default function BrandStory() {
   return (
@@ -28,12 +29,12 @@ export default function BrandStory() {
               This isn't your typical energy drink. KRĀKN is a statement. A force. A cold surge of
               energy that hits different — because it was built different.
             </p>
-            <a
-              href="/shop"
+            <Link
+              to="/about"
               className="font-montserrat text-sm font-semibold tracking-widest uppercase px-8 py-3.5 border border-sky-500/50 hover:border-sky-400 text-sky-300 hover:text-sky-200 rounded-full transition-all duration-300 inline-block hover:bg-sky-500/10"
             >
               Our Mission
-            </a>
+            </Link>
           </motion.div>
 
           <motion.div
