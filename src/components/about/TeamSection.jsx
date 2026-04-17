@@ -116,11 +116,8 @@ export default function TeamSection() {
 
           <div>
             <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-6">The Team</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3" style={{ gap: '16px', marginBottom: '16px' }}>
-              {row1.map((member, i) => <TeamCard key={member.name} member={member} index={i + 1} />)}
-            </div>
             <div className="grid grid-cols-2 sm:grid-cols-3" style={{ gap: '16px' }}>
-              {row2.map((member, i) => <TeamCard key={member.name} member={member} index={i + 4} />)}
+              {team.slice(1).map((member, i) => <TeamCard key={member.name} member={member} index={i + 1} />)}
             </div>
           </div>
         </div>

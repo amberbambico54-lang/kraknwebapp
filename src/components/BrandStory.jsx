@@ -50,7 +50,7 @@ export default function BrandStory() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-sky-900/40 flex items-center justify-center" style={{ boxShadow: '0 0 80px rgba(56,189,248,0.2)' }}>
                   <span className="font-bebas uppercase text-3xl sm:text-4xl md:text-5xl text-sky-300 tracking-widest" style={{ textShadow: '0 0 30px rgba(56,189,248,0.6)' }}>
-                    KR<span className="text-white">A</span>KN
+                    <span className="text-white">K</span>RAKN
                   </span>
                 </div>
               </div>
