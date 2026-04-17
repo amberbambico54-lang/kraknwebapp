@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import { FaLeaf, FaBolt, FaFlask } from 'react-icons/fa'
 
 const diffs = [
-  { Icon: FaLeaf, title: 'Plant-Based Caffeine', body: 'Sourced from green tea and guarana — not synthetic caffeine. Cleaner energy, smoother delivery, zero jitters.' },
-  { Icon: FaBolt, title: 'No Crash Formula', body: 'Engineered with L-theanine to balance the caffeine curve. You come down easy — not hard.' },
-  { Icon: FaFlask, title: 'Performance Formula', body: 'Electrolytes, B-vitamins, and adaptogens. Built for output, not just a quick buzz.' },
+  { Icon: FaLeaf, title: 'Cola Extract Base', body: 'Distinct formulation for smoother absorption and balanced energy delivery.' },
+  { Icon: FaBolt, title: 'Stable Energy Curve', body: 'Consistent performance without spikes or crashes.' },
+  { Icon: FaFlask, title: 'Performance-Driven Formula', body: 'Built with key ingredients to support strength, endurance, and focus.' },
 ]
 
 export default function Differentiation() {

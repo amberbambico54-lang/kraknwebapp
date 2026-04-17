@@ -68,6 +68,7 @@ export default function Navbar() {
 
         <Link
           to="/shop"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="hidden md:inline-block font-montserrat text-sm font-semibold tracking-widest uppercase px-6 py-2.5 bg-sky-500 hover:bg-sky-400 text-white rounded-full transition-all duration-300"
         >
           Shop Now
@@ -102,6 +103,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/shop"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="font-montserrat text-sm font-semibold tracking-widest uppercase px-6 py-2.5 bg-sky-500 text-white rounded-full text-center"
           >
             Shop Now
