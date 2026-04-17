@@ -18,16 +18,16 @@ export default function AboutStory() {
             Not Built in a <br />
             <span className="text-sky-400">Boardroom</span>
           </h2>
-          <p className="font-montserrat text-gray-300 text-sm sm:text-base leading-relaxed mb-4 text-justify">
+          <p className="font-montserrat text-gray-300 text-sm sm:text-base leading-relaxed mb-4 text-center pt-2">
             KRAKN was forged in the pressure of the deep — where only the strongest survive. We
             looked at the energy drink market and saw the same thing repeated: artificial hype,
             sugar crashes, empty promises.
           </p>
-          <p className="font-montserrat text-gray-400 text-sm sm:text-base leading-relaxed mb-4 text-justify">
+          <p className="font-montserrat text-gray-400 text-sm sm:text-base leading-relaxed mb-4 text-center">
             So we went a different direction. Down. Into the depths where raw power lives. We
             built a formula that respects your body and your performance — no shortcuts, no fillers.
           </p>
-          <p className="font-montserrat text-gray-400 text-sm sm:text-base leading-relaxed text-justify">
+          <p className="font-montserrat text-gray-400 text-sm sm:text-base leading-relaxed text-center">
             KRAKN isn't just a drink. It's a statement that you refuse to settle for average.
           </p>
         </motion.div>
