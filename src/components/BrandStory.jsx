@@ -22,11 +22,11 @@ export default function BrandStory() {
               <span className="text-sky-400">Depths</span>
             </h2>
             <p className="font-montserrat text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
-              KRĀKN wasn't born in a boardroom. It was forged in the pressure of the deep — where
+              KRAKN wasn't born in a boardroom. It was forged in the pressure of the deep — where
               only the strongest survive. We took the raw power of the ocean and bottled it.
             </p>
             <p className="font-montserrat text-gray-400 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10">
-              This isn't your typical energy drink. KRĀKN is a statement. A force. A cold surge of
+              This isn't your typical energy drink. KRAKN is a statement. A force. A cold surge of
               energy that hits different — because it was built different.
             </p>
             <Link
@@ -50,7 +50,7 @@ export default function BrandStory() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full bg-sky-900/40 flex items-center justify-center" style={{ boxShadow: '0 0 80px rgba(56,189,248,0.2)' }}>
                   <span className="font-bebas uppercase text-3xl sm:text-4xl md:text-5xl text-sky-300 tracking-widest" style={{ textShadow: '0 0 30px rgba(56,189,248,0.6)' }}>
-                    KR<span className="text-white">Ā</span>KN
+                    KR<span className="text-white">A</span>KN
                   </span>
                 </div>
               </div>
