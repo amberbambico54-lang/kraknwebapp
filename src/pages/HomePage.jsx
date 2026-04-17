@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import VideoSection from '../components/VideoSection'
 import Benefits from '../components/Benefits'
 import Products from '../components/Products'
+import PosterSection from '../components/PosterSection'
 import BrandStory from '../components/BrandStory'
 import Features from '../components/Features'
 import SocialProof from '../components/SocialProof'
@@ -16,7 +17,8 @@ export default function HomePage() {
       <Hero />
       <VideoSection />
       <Benefits />
-      <Products />
+      {/* <Products /> */}
+      <PosterSection />
       <BrandStory />
       <Features />
       <SocialProof />

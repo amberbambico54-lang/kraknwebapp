@@ -61,7 +61,11 @@ function TeamCard({ member, index }) {
       <div className="relative z-20">
         <div className="w-full aspect-square rounded-2xl border border-sky-900/30 mb-5 overflow-hidden bg-[#0d2240]">
           {member.image ? (
-            <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-full h-full object-cover object-top transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105"
+            />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
               <span className="font-bebas text-4xl text-sky-400/30 tracking-widest">

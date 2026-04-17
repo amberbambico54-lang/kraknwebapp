@@ -15,7 +15,7 @@ const cards = [
 
 export default function MissionVision() {
   return (
-    <section className="bg-[#0A1A2F] py-16 sm:py-24">
+    <section id="mission" className="bg-[#0A1A2F] py-16 sm:py-24">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

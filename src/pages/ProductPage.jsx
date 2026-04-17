@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductHero from "../components/products/ProductHero";
@@ -68,6 +70,15 @@ const variants = [
 ];
 
 export default function ProductPage() {
+  const { hash } = useLocation()
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.getElementById(hash.replace('#', ''))
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
+    }
+  }, [hash])
+
   return (
     <>
       <Navbar />
