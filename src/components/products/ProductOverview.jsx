@@ -1,44 +1,47 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const products = [
   {
-    name: 'Classic Depth',
-    tagline: 'Pure, balanced energy',
-    badge: 'Original',
-    canColor: 'from-sky-900/60 to-[#0A1A2F]',
-    borderColor: 'border-sky-500/30',
-    glowColor: 'rgba(56,189,248,0.2)',
-    accentColor: 'text-sky-400',
-    badgeBg: 'bg-sky-500/20 border-sky-500/30 text-sky-300',
-    id: 'classic',
+    name: "Krakn Classic",
+    tagline: "Pure, balanced energy",
+    badge: "Original",
+    canColor: "from-sky-900/60 to-[#0A1A2F]",
+    borderColor: "border-sky-500/30",
+    glowColor: "rgba(56,189,248,0.2)",
+    accentColor: "text-sky-400",
+    badgeBg: "bg-sky-500/20 border-sky-500/30 text-sky-300",
+    id: "classic",
   },
   {
-    name: 'Green Surge',
-    tagline: 'Clean energy, no compromise',
-    badge: 'Plant-Based',
-    canColor: 'from-emerald-900/60 to-[#0A1A2F]',
-    borderColor: 'border-emerald-500/30',
-    glowColor: 'rgba(52,211,153,0.2)',
-    accentColor: 'text-emerald-400',
-    badgeBg: 'bg-emerald-500/20 border-emerald-500/30 text-emerald-300',
-    id: 'green',
+    name: "Krakn PURE",
+    tagline: "Clean energy, no compromise",
+    badge: "Plant-Based",
+    canColor: "from-emerald-900/60 to-[#0A1A2F]",
+    borderColor: "border-emerald-500/30",
+    glowColor: "rgba(52,211,153,0.2)",
+    accentColor: "text-emerald-400",
+    badgeBg: "bg-emerald-500/20 border-emerald-500/30 text-emerald-300",
+    id: "green",
   },
   {
-    name: 'Red Rush',
-    tagline: 'Maximum intensity unleashed',
-    badge: 'High Performance',
-    canColor: 'from-red-900/60 to-[#0A1A2F]',
-    borderColor: 'border-red-500/30',
-    glowColor: 'rgba(248,113,113,0.2)',
-    accentColor: 'text-red-400',
-    badgeBg: 'bg-red-500/20 border-red-500/30 text-red-300',
-    id: 'red',
+    name: "Krakn MAX",
+    tagline: "Maximum intensity unleashed",
+    badge: "High Performance",
+    canColor: "from-red-900/60 to-[#0A1A2F]",
+    borderColor: "border-red-500/30",
+    glowColor: "rgba(248,113,113,0.2)",
+    accentColor: "text-red-400",
+    badgeBg: "bg-red-500/20 border-red-500/30 text-red-300",
+    id: "red",
   },
-]
+];
 
 export default function ProductOverview() {
   return (
-    <section id="overview" className="py-16 sm:py-24 bg-[#060f1e] relative overflow-hidden">
+    <section
+      id="overview"
+      className="py-16 sm:py-24 bg-[#060f1e] relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-[#0A1A2F] to-[#060f1e]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,13 +70,24 @@ export default function ProductOverview() {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className={`group relative rounded-2xl bg-gradient-to-b ${p.canColor} border ${p.borderColor} overflow-hidden transition-all duration-300 hover:-translate-y-2 cursor-pointer`}
               style={{ boxShadow: `0 4px 40px rgba(0,0,0,0.4)` }}
-              onClick={() => document.getElementById(p.id)?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById(p.id)
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: `radial-gradient(circle at center, ${p.glowColor}, transparent 70%)` }} />
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{
+                  background: `radial-gradient(circle at center, ${p.glowColor}, transparent 70%)`,
+                }}
+              />
 
               {/* Badge */}
               <div className="absolute top-4 right-4">
-                <span className={`font-montserrat text-xs font-semibold tracking-widest uppercase px-3 py-1 border rounded-full ${p.badgeBg}`}>
+                <span
+                  className={`font-montserrat text-xs font-semibold tracking-widest uppercase px-3 py-1 border rounded-full ${p.badgeBg}`}
+                >
                   {p.badge}
                 </span>
               </div>
@@ -82,22 +96,41 @@ export default function ProductOverview() {
               <div className="h-[220px] flex items-center justify-center relative">
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: i * 0.5 }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: i * 0.5,
+                  }}
                   className={`w-20 h-40 rounded-2xl bg-gradient-to-b ${p.canColor} border ${p.borderColor} flex items-center justify-center`}
-                  style={{ boxShadow: `0 0 30px ${p.glowColor}`, willChange: 'transform' }}
+                  style={{
+                    boxShadow: `0 0 30px ${p.glowColor}`,
+                    willChange: "transform",
+                  }}
                 >
-                  <span className={`font-bebas text-base tracking-widest text-center px-2 ${p.accentColor}`}>
+                  <span
+                    className={`font-bebas text-base tracking-widest text-center px-2 ${p.accentColor}`}
+                  >
                     KR<span className="text-white">Ā</span>KN
                   </span>
                 </motion.div>
-                <div className="absolute bottom-4 w-16 h-3 rounded-full blur-xl" style={{ background: p.glowColor }} />
+                <div
+                  className="absolute bottom-4 w-16 h-3 rounded-full blur-xl"
+                  style={{ background: p.glowColor }}
+                />
               </div>
 
               {/* Info */}
               <div className="p-6 pt-0">
-                <h3 className="font-bebas text-3xl text-white tracking-wider mb-1">{p.name}</h3>
-                <p className={`font-montserrat text-sm mb-5 ${p.accentColor}`}>{p.tagline}</p>
-                <button className={`w-full font-montserrat text-sm font-semibold tracking-widest uppercase py-3 border ${p.borderColor} hover:bg-white/5 ${p.accentColor} rounded-full transition-all duration-300`}>
+                <h3 className="font-bebas text-3xl text-white tracking-wider mb-1">
+                  {p.name}
+                </h3>
+                <p className={`font-montserrat text-sm mb-5 ${p.accentColor}`}>
+                  {p.tagline}
+                </p>
+                <button
+                  className={`w-full font-montserrat text-sm font-semibold tracking-widest uppercase py-3 border ${p.borderColor} hover:bg-white/5 ${p.accentColor} rounded-full transition-all duration-300`}
+                >
                   View Details
                 </button>
               </div>
@@ -106,5 +139,5 @@ export default function ProductOverview() {
         </div>
       </div>
     </section>
-  )
+  );
 }
