@@ -64,7 +64,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
         >
           <a
-            href="#products"
+            href="#posters"
             className="w-full sm:w-auto font-montserrat font-semibold text-sm tracking-widest uppercase px-8 sm:px-10 py-4 bg-sky-500 hover:bg-sky-400 text-white rounded-full transition-all duration-300 hover:scale-105 text-center"
             style={{ boxShadow: '0 0 30px rgba(56,189,248,0.4)' }}
           >

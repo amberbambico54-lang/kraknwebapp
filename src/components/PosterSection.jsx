@@ -12,7 +12,7 @@ const posters = [
 
 export default function PosterSection() {
   return (
-    <section className="py-24 bg-[#0A1A2F] relative overflow-hidden">
+    <section id="posters" className="py-24 bg-[#0A1A2F] relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#060f1e] via-[#0A1A2F] to-[#060f1e] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,7 +27,7 @@ export default function PosterSection() {
             The Line Up
           </p>
           <h2 className="font-bebas uppercase text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
-            Our<span className="text-sky-400">Our Products</span>
+            Our<span className="text-sky-400">Products</span>
           </h2>
         </motion.div>
 
