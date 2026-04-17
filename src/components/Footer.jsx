@@ -1,7 +1,18 @@
 import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
-const nav = ['Home', 'About', 'Products', 'Shop']
-const product = ['Flavors', 'Ingredients', 'FAQs']
+const navLinks = [
+  { label: 'Home',     to: '/'        },
+  { label: 'About',    to: '/about'   },
+  { label: 'Products', to: '/products'},
+  { label: 'Shop',     to: '/shop'    },
+]
+
+const productLinks = [
+  { label: 'Flavors',     to: '/products#overview'    },
+  { label: 'Ingredients', to: '/products#ingredients' },
+  { label: 'FAQs',        to: '#'                     },
+]
 
 export default function Footer() {
   return (
@@ -24,11 +35,14 @@ export default function Footer() {
               Navigation
             </h4>
             <ul className="space-y-3">
-              {nav.map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className="font-montserrat text-sm text-gray-500 hover:text-sky-400 transition-colors duration-300">
-                    {item}
-                  </a>
+              {navLinks.map(({ label, to }) => (
+                <li key={label}>
+                  <Link
+                    to={to}
+                    className="font-montserrat text-sm text-gray-500 hover:text-sky-400 transition-colors duration-300"
+                  >
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -40,11 +54,14 @@ export default function Footer() {
               Product
             </h4>
             <ul className="space-y-3">
-              {product.map((item) => (
-                <li key={item}>
-                  <a href="#" className="font-montserrat text-sm text-gray-500 hover:text-sky-400 transition-colors duration-300">
-                    {item}
-                  </a>
+              {productLinks.map(({ label, to }) => (
+                <li key={label}>
+                  <Link
+                    to={to}
+                    className="font-montserrat text-sm text-gray-500 hover:text-sky-400 transition-colors duration-300"
+                  >
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -57,11 +74,28 @@ export default function Footer() {
             </h4>
             <div className="flex gap-3">
               {[
-                { icon: <FaInstagram />, label: 'Instagram' },
-                { icon: <FaFacebookF />, label: 'Facebook' },
-                { icon: <FaTiktok />, label: 'TikTok' },
-              ].map(({ icon, label }) => (
-                <a key={label} href="#" aria-label={label} className="w-10 h-10 rounded-full border border-sky-900/50 hover:border-sky-500/50 flex items-center justify-center text-gray-500 hover:text-sky-400 transition-all duration-300 hover:bg-sky-500/10">
+                {
+                  icon: <FaInstagram />,
+                  label: "Instagram",
+                  link: "https://www.instagram.com/",
+                },
+                {
+                  icon: <FaFacebookF />,
+                  label: "Facebook",
+                  link: "https://www.facebook.com/",
+                },
+                {
+                  icon: <FaTiktok />,
+                  label: "TikTok",
+                  link: "https://www.tiktok.com/",
+                },
+              ].map(({ icon, label, link }) => (
+                <a
+                  key={label}
+                  href={link}
+                  aria-label={label}
+                  className="w-10 h-10 rounded-full border border-sky-900/50 hover:border-sky-500/50 flex items-center justify-center text-gray-500 hover:text-sky-400 transition-all duration-300 hover:bg-sky-500/10"
+                >
                   {icon}
                 </a>
               ))}
@@ -79,5 +113,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

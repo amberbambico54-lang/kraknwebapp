@@ -9,7 +9,7 @@ const ingredients = [
 
 export default function Ingredients() {
   return (
-    <section className="py-16 sm:py-24 bg-[#060f1e] relative overflow-hidden">
+    <section id="ingredients" className="py-16 sm:py-24 bg-[#060f1e] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
