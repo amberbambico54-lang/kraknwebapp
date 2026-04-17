@@ -29,7 +29,7 @@ export default function CTA() {
             Join thousands of athletes who chose KRĀKN. Your next level starts here.
           </p>
           <motion.a
-            href="#products"
+            href="/shop"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="inline-block font-montserrat font-semibold text-sm tracking-widest uppercase px-10 sm:px-14 py-4 sm:py-5 bg-sky-500 hover:bg-sky-400 text-white rounded-full transition-colors duration-300"

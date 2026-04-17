@@ -56,7 +56,7 @@ export default function ComparisonTable() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             Side by Side
           </p>
-          <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
+          <h2 className="font-bebas uppercase text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
             Compare the <span className="text-sky-400">Formula</span>
           </h2>
         </motion.div>

@@ -21,7 +21,7 @@ export default function Ingredients() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             What's Inside
           </p>
-          <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
+          <h2 className="font-bebas uppercase text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
             The <span className="text-sky-400">Ingredients</span>
           </h2>
         </motion.div>

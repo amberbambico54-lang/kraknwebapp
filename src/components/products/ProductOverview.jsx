@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import kraknClassic from '../../assets/krakencola/KRAKN Classic.png'
+import kraknPure    from '../../assets/krakencola/KRAKN PURE.png'
+import kraknMax     from '../../assets/krakencola/KRAKN MAX.png'
 
 const products = [
   {
-    name: "Krakn Classic",
+    name: "KRAKN Classic",
     tagline: "Pure, balanced energy",
     badge: "Original",
     canColor: "from-sky-900/60 to-[#0A1A2F]",
@@ -11,9 +15,10 @@ const products = [
     accentColor: "text-sky-400",
     badgeBg: "bg-sky-500/20 border-sky-500/30 text-sky-300",
     id: "classic",
+    image: kraknClassic,
   },
   {
-    name: "Krakn PURE",
+    name: "KRAKN PURE",
     tagline: "Clean energy, no compromise",
     badge: "Plant-Based",
     canColor: "from-emerald-900/60 to-[#0A1A2F]",
@@ -22,9 +27,10 @@ const products = [
     accentColor: "text-emerald-400",
     badgeBg: "bg-emerald-500/20 border-emerald-500/30 text-emerald-300",
     id: "green",
+    image: kraknPure,
   },
   {
-    name: "Krakn MAX",
+    name: "KRAKN MAX",
     tagline: "Maximum intensity unleashed",
     badge: "High Performance",
     canColor: "from-red-900/60 to-[#0A1A2F]",
@@ -33,6 +39,7 @@ const products = [
     accentColor: "text-red-400",
     badgeBg: "bg-red-500/20 border-red-500/30 text-red-300",
     id: "red",
+    image: kraknMax,
   },
 ];
 
@@ -55,7 +62,7 @@ export default function ProductOverview() {
           <p className="font-montserrat text-sky-400 text-xs tracking-[0.4em] uppercase mb-3">
             All Variants
           </p>
-          <h2 className="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
+          <h2 className="font-bebas uppercase text-5xl sm:text-6xl md:text-7xl text-white tracking-wider">
             The Full <span className="text-sky-400">Collection</span>
           </h2>
         </motion.div>
@@ -92,28 +99,16 @@ export default function ProductOverview() {
                 </span>
               </div>
 
-              {/* Can mockup */}
+              {/* Can image */}
               <div className="h-[220px] flex items-center justify-center relative">
-                <motion.div
+                <motion.img
+                  src={p.image}
+                  alt={p.name}
                   animate={{ y: [0, -8, 0] }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: i * 0.5,
-                  }}
-                  className={`w-20 h-40 rounded-2xl bg-gradient-to-b ${p.canColor} border ${p.borderColor} flex items-center justify-center`}
-                  style={{
-                    boxShadow: `0 0 30px ${p.glowColor}`,
-                    willChange: "transform",
-                  }}
-                >
-                  <span
-                    className={`font-bebas text-base tracking-widest text-center px-2 ${p.accentColor}`}
-                  >
-                    KR<span className="text-white">Ā</span>KN
-                  </span>
-                </motion.div>
+                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: i * 0.5 }}
+                  className="h-44 w-auto object-contain"
+                  style={{ filter: `drop-shadow(0 0 20px ${p.glowColor})`, willChange: 'transform' }}
+                />
                 <div
                   className="absolute bottom-4 w-16 h-3 rounded-full blur-xl"
                   style={{ background: p.glowColor }}
@@ -128,11 +123,12 @@ export default function ProductOverview() {
                 <p className={`font-montserrat text-sm mb-5 ${p.accentColor}`}>
                   {p.tagline}
                 </p>
-                <button
-                  className={`w-full font-montserrat text-sm font-semibold tracking-widest uppercase py-3 border ${p.borderColor} hover:bg-white/5 ${p.accentColor} rounded-full transition-all duration-300`}
+                <Link
+                  to="/shop"
+                  className={`block w-full font-montserrat text-sm font-semibold tracking-widest uppercase py-3 border ${p.borderColor} hover:bg-white/5 ${p.accentColor} rounded-full transition-all duration-300 text-center`}
                 >
                   View Details
-                </button>
+                </Link>
               </div>
             </motion.div>
           ))}

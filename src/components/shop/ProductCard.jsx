@@ -32,11 +32,22 @@ export default function ProductCard({ product, onAddToCart }) {
       {/* Image area */}
       <div className="h-[200px] sm:h-[220px] flex items-center justify-center relative overflow-hidden">
         {product.image ? (
-          <img
-            src={product.image}
-            alt={product.name}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
+          product.category === 'drink' ? (
+            <motion.img
+              src={product.image}
+              alt={product.name}
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+              className="h-[170px] sm:h-[190px] w-auto object-contain"
+              style={{ filter: `drop-shadow(0 0 20px ${s.glow})`, willChange: 'transform' }}
+            />
+          ) : (
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          )
         ) : (
           <motion.div
             animate={{ y: [0, -6, 0] }}

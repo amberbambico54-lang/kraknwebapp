@@ -4,7 +4,7 @@ const features = [
   { label: 'High Caffeine', value: '200mg', desc: 'Controlled & precise' },
   { label: 'Sugar Crash', value: 'Zero', desc: 'Clean all the way down' },
   { label: 'Electrolytes', value: 'Added', desc: 'Hydration support built in' },
-  { label: 'Formulation', value: 'Premium', desc: 'No fillers. No shortcuts.' },
+  { label: 'Creatine Powder', value: 'Premium', desc: 'Supports strength, endurance and muscle performance.' },
 ]
 
 export default function Features() {
@@ -24,7 +24,7 @@ export default function Features() {
             The Difference
           </p>
           <h2 className="font-bebas uppercase text-4xl sm:text-5xl md:text-6xl text-white tracking-wider">
-            What Makes KRĀKN <span className="text-sky-400">Different?</span>
+            What Makes KRAKN <span className="text-sky-400">Different?</span>
           </h2>
         </motion.div>
 

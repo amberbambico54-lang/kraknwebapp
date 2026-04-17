@@ -30,7 +30,7 @@ const colorMap = {
   },
 }
 
-export default function VariantSection({ id, title, tagline, description, benefits, color = 'blue', reverse = false }) {
+export default function VariantSection({ id, title, tagline, description, benefits, color = 'blue', reverse = false, image, poster }) {
   const c = colorMap[color]
 
   const CanCol = (
@@ -39,26 +39,42 @@ export default function VariantSection({ id, title, tagline, description, benefi
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="flex items-center justify-center"
+      className="flex items-center justify-center w-full"
     >
-      <div className="relative flex items-center justify-center w-full max-w-xs sm:max-w-sm mx-auto aspect-square">
+      <div className="relative flex items-center justify-center w-full max-w-xs sm:max-w-sm mx-auto aspect-square rounded-2xl overflow-hidden">
+        {/* Poster background */}
+        {poster && (
+          <img
+            src={poster}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover opacity-80"
+          />
+        )}
+        {/* Dark overlay so can pops */}
+        <div className="absolute inset-0 bg-[#060f1e]/40" />
         <div className="absolute inset-0 rounded-full blur-3xl opacity-20" style={{ background: c.glowStrong }} />
-        <div
-          className={`absolute inset-8 rounded-full border ${c.border} opacity-30 animate-spin`}
-          style={{ animationDuration: '20s', willChange: 'transform' }}
-        />
-        <motion.div
-          animate={{ y: [0, -12, 0] }}
-          transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-          className={`relative w-28 sm:w-36 h-56 sm:h-72 rounded-3xl bg-gradient-to-b ${c.canFrom} to-[#0A1A2F] border ${c.border} flex items-center justify-center z-10`}
-          style={{ boxShadow: `0 0 60px ${c.glow}, 0 0 120px ${c.glow}`, willChange: 'transform' }}
-        >
-          <span className={`font-bebas text-2xl tracking-widest text-center px-3 ${c.accent}`}>
-            KR<span className="text-white">Ā</span>KN
-          </span>
-          <div className="absolute top-4 left-3 w-1.5 h-16 bg-white/10 rounded-full blur-sm" />
-        </motion.div>
-        <div className="absolute bottom-8 w-24 h-4 rounded-full blur-xl" style={{ background: c.glowStrong }} />
+        {image ? (
+          <motion.img
+            src={image}
+            alt={title}
+            animate={{ y: [0, -12, 0] }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+            className="relative z-10 h-56 sm:h-72 w-auto object-contain"
+            style={{ filter: `drop-shadow(0 0 40px ${c.glowStrong})`, willChange: 'transform' }}
+          />
+        ) : (
+          <motion.div
+            animate={{ y: [0, -12, 0] }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+            className={`relative w-28 sm:w-36 h-56 sm:h-72 rounded-3xl bg-gradient-to-b ${c.canFrom} to-[#0A1A2F] border ${c.border} flex items-center justify-center z-10`}
+            style={{ boxShadow: `0 0 60px ${c.glow}, 0 0 120px ${c.glow}`, willChange: 'transform' }}
+          >
+            <span className={`font-bebas text-2xl tracking-widest text-center px-3 ${c.accent}`}>
+              KR<span className="text-white">Ā</span>KN
+            </span>
+          </motion.div>
+        )}
+        <div className="absolute bottom-6 w-24 h-4 rounded-full blur-xl z-10" style={{ background: c.glowStrong }} />
       </div>
     </motion.div>
   )
@@ -71,7 +87,7 @@ export default function VariantSection({ id, title, tagline, description, benefi
       transition={{ duration: 0.8, delay: 0.1 }}
     >
       <p className={`font-montserrat text-xs tracking-[0.4em] uppercase mb-4 ${c.accent}`}>
-        KRĀKN Variant
+        KRAKN Variant
       </p>
       <h2
         className="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wider leading-none mb-3"
@@ -93,12 +109,12 @@ export default function VariantSection({ id, title, tagline, description, benefi
           </li>
         ))}
       </ul>
-      <a
-        href="#"
+     <a
+        href="/shop"
         className={`inline-block font-montserrat font-semibold text-sm tracking-widest uppercase px-8 py-3.5 border ${c.border} ${c.accent} hover:bg-white/5 rounded-full transition-all duration-300 hover:scale-105`}
         style={{ boxShadow: `0 0 20px ${c.glow}` }}
       >
-        View Details
+        Shop Now
       </a>
     </motion.div>
   )

@@ -13,13 +13,16 @@ import premiumSocks      from '../../assets/productsItems/Krakn Premium Socks.jp
 import towel             from '../../assets/productsItems/Krakn Towel.jpg'
 import tumblr            from '../../assets/productsItems/Krakn Tumblr.jpg'
 import wristWraps        from '../../assets/productsItems/Krakn Wrist Wraps.jpg'
+import kraknClassic      from '../../assets/krakencola/KRAKN Classic.png'
+import kraknPure         from '../../assets/krakencola/KRAKN PURE.png'
+import kraknMax          from '../../assets/krakencola/KRAKN MAX.png'
 
 export const products = [
   // Drinks
-  { id: 1, name: 'KRĀKN Classic',                  category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'blue',    badge: 'Best Seller', sizes: [],                     colors: [],                              image: null },
-  { id: 2, name: 'KRĀKN PURE',              category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'green',   badge: 'New',         sizes: [],                     colors: [],                              image: null },
-  { id: 3, name: 'KRĀKN MAX',                 category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'red',     badge: 'Hot',         sizes: [],                     colors: [],                              image: null },
-  { id: 4, name: 'KRĀKN 6-Pack',                   category: 'drink',     price: 650,  type: 'Pre-workout Cola', variant: 'blue',    badge: 'Bundle',      sizes: [],                     colors: [],                              image: null },
+  { id: 1, name: 'KRAKN Classic',                  category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'blue',    badge: 'Best Seller', sizes: [],                     colors: [],                              image: kraknClassic },
+  { id: 2, name: 'KRAKN PURE',              category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'green',   badge: 'New',         sizes: [],                     colors: [],                              image: kraknPure },
+  { id: 3, name: 'KRAKN MAX',                 category: 'drink',     price: 120,  type: 'Pre-workout Cola', variant: 'red',     badge: 'Hot',         sizes: [],                     colors: [],                              image: kraknMax },
+  { id: 4, name: 'KRAKN 6-Pack',                   category: 'drink',     price: 650,  type: 'Pre-workout Cola', variant: 'blue',    badge: 'Bundle',      sizes: [],                     colors: [],                              image: kraknClassic },
 
   // Apparel
   { id: 5,  name: 'Krakn Elite Apparel',           category: 'apparel',   price: 850,  type: 'Apparel',      variant: 'neutral', badge: '',            sizes: ['S','M','L','XL'],     colors: ['#0A1A2F','#ffffff','#38bdf8'], image: eliteApparel },

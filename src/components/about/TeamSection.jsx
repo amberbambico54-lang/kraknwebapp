@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const team = [
-  { name: "Mark Anthony", role: "Founder & CEO" },
+  { name: "Mark Anthony", role: "Founder & CEO" , },
   { name: "Blaine Bautista", role: "Head of Formula" },
-  { name: "Freyan Bambico", role: "Creative Director" },
+  { name: "Fernan Bambico", role: "Creative Director" , image: "../assets/team/Fernan Bambico.png" },
   { name: "Christine Shane Pe", role: "Brand Strategist" },
   { name: "Marc Laril", role: "Performance Lead" },
   { name: "Aldrin Cabrera", role: "Operations" },
@@ -156,7 +156,8 @@ function TeamCard({ member, index }) {
                 .join("")}
             </div>
             <p className="font-montserrat text-gray-600 text-xs mt-1">
-              Photo here
+              <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+              {member.image}
             </p>
           </div>
         </div>

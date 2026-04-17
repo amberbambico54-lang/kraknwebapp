@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import logo from '../assets/Kraken Lettering Logo.svg'
 
 const navLinks = [
   { label: 'Home',     to: '/'        },
@@ -22,7 +23,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
             <div className="font-bebas text-3xl tracking-widest text-white mb-3">
-              KR<span className="text-sky-400">Ā</span>KN
+               <Link
+          to="/"
+          className="flex items-center "
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <img src={logo} className="h-9 w-auto" alt="Kraken Logo" />
+        </Link>
             </div>
             <p className="font-montserrat text-gray-500 text-xs tracking-widest uppercase">
               Power Born Beneath

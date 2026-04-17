@@ -6,14 +6,20 @@ import VariantSection from "../components/products/VariantSection";
 import ComparisonTable from "../components/products/ComparisonTable";
 import Ingredients from "../components/products/Ingredients";
 import CTA from "../components/CTA";
+import kraknClassic      from '../assets/krakencola/KRAKN Classic.png'
+import kraknPure         from '../assets/krakencola/KRAKN PURE.png'
+import kraknMax          from '../assets/krakencola/KRAKN MAX.png'
+import posterClassic     from '../assets/krakenPoster/KRAKN classic.png'
+import posterPure        from '../assets/krakenPoster/KRAKN PURE.png'
+import posterMax         from '../assets/krakenPoster/KRAKN MAX.png'
 
 const variants = [
   {
     id: "classic",
-    title: "Krakn Classic",
+    title: "KRAKN Classic",
     tagline: "Pure, balanced energy",
     description:
-      "The original KRĀKN formula. Engineered for everyday performance — a smooth, controlled energy that keeps you locked in without the edge. Built for those who want consistency over chaos.",
+      "The original KRAKN formula. Engineered for everyday performance — a smooth, controlled energy that keeps you locked in without the edge. Built for those who want consistency over chaos.",
     benefits: [
       "Balanced caffeine — 150mg natural",
       "Smooth focus with no jitter",
@@ -22,13 +28,15 @@ const variants = [
     ],
     color: "blue",
     reverse: false,
+    image: kraknClassic,
+    poster: posterClassic,
   },
   {
     id: "green",
-    title: "Krakn Pure",
+    title: "KRAKN PURE",
     tagline: "Clean energy, no compromise",
     description:
-      "KRĀKN Green is built for the clean athlete. Every ingredient is plant-sourced, every benefit is real. No synthetic stimulants — just nature-powered performance that respects your body.",
+      "KRAKN Green is built for the clean athlete. Every ingredient is plant-sourced, every benefit is real. No synthetic stimulants — just nature-powered performance that respects your body.",
     benefits: [
       "100% plant-based caffeine from guarana",
       "No crash — L-theanine balanced",
@@ -37,10 +45,12 @@ const variants = [
     ],
     color: "green",
     reverse: true,
+    image: kraknPure,
+    poster: posterPure,
   },
   {
     id: "red",
-    title: "Krakn MAX",
+    title: "KRAKN MAX",
     tagline: "Maximum intensity unleashed",
     description:
       "Not for the faint-hearted. KRĀKN Red is engineered for peak output — high caffeine, fast activation, and extreme focus. When you need to go all in, this is your formula.",
@@ -52,6 +62,8 @@ const variants = [
     ],
     color: "red",
     reverse: false,
+    image: kraknMax,
+    poster: posterMax,
   },
 ];
 

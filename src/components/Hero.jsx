@@ -39,12 +39,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-bebas uppercase text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-wider text-white mb-4"
+          className="font-bebas uppercase text-5xl sm:text-7xl md:text-6xl lg:text-7xl leading-none tracking-wider text-white mb-4"
           style={{ textShadow: '0 0 60px rgba(56,189,248,0.3)' }}
         >
-          Feel the Pull
+          Unleash Your Strength
           <br />
-          <span className="text-sky-400">of Summer</span>
+          <span className="text-sky-400">From Within</span>
         </motion.h1>
 
         <motion.p
@@ -70,7 +70,7 @@ export default function Hero() {
             Dive In Now
           </a>
           <a
-            href="#products"
+            href="/products"
             className="w-full sm:w-auto font-montserrat font-semibold text-sm tracking-widest uppercase px-8 sm:px-10 py-4 border border-sky-500/50 hover:border-sky-400 text-sky-300 hover:text-sky-200 rounded-full transition-all duration-300 hover:scale-105 backdrop-blur-sm text-center"
           >
             Explore Flavors

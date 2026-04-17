@@ -8,12 +8,12 @@ const testimonials = [
     role: 'Pro Athlete',
   },
   {
-    quote: 'KRĀKN hits different. I use it before every training session. Nothing compares.',
+    quote: 'KRAKN hits different. I use it before every training session. Nothing compares.',
     name: 'Jess R.',
     role: 'CrossFit Coach',
   },
   {
-    quote: 'Finally an energy drink that actually tastes good and performs even better.',
+    quote: 'Finally an pre-workout cola that actually tastes good and performs even better.',
     name: 'Kai L.',
     role: 'Competitive Swimmer',
   },
